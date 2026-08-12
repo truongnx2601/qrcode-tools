@@ -174,28 +174,6 @@ export async function generatePdf(
   const pageHeight =
     page.getHeight();
 
-  // ==========================================================
-  // DECORATE QR
-  //
-  // decorateQr tạo MỘT image duy nhất:
-  //
-  // ┌───────────────────────┐
-  // │       TÊN TRƯỜNG      │
-  // │───────────────────────│
-  // │                       │
-  // │        QR CODE        │
-  // │                       │
-  // └───────────────────────┘
-  //
-  // Nếu options.enabled = false:
-  //
-  // ┌───────────────────────┐
-  // │                       │
-  // │        QR CODE        │
-  // │                       │
-  // └───────────────────────┘
-  // ==========================================================
-
   const decorated =
     await decorateQr(
       qr.file,
