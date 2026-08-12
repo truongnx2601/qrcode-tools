@@ -240,7 +240,7 @@ export default function App() {
    */
 
   const [
-    pageCount,
+    ,
     setPageCount,
   ] = useState(0);
 
